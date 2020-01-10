@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Pistyll Rhaeadar</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="css/bootstrap-grid.css.map" />
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css.map" />
+        <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+        <link rel="stylesheet" href="css/bootstrap-reboot.css.map" />
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css.map" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/bootstrap.css.map" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    </head>
+
+    <body>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="toggle-overlay">Menu</span>
+<!--Menu-->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="walks.html">Walks</a>
+                <a href="accomadation.html">Accomodation</a>
+                <a href="gallery.html">The Gallery</a>
+                <a href="location.html">Where To Find Us</a>
+            </div>
+        </div>
+
+        <!--Main-->
+        <article id="main">
+            <header>
+                <h2>Walks</h2>
+                <p>Routes around the falls</p>
+            </header>
+            <section class="wrapper style5">
+                <div class="inner">
+                    <h3> To the top of the waterfall</h3>
+                    <span class="image right"><img src="css/images/walks.JPG" alt="map of the waterfall and the land surrounding" /></span>
+                    <p>
+                        Next to the cafe go through the black gate leading to the bottom of the waterfall. Take the path
+                        leading off through the woods to the right (don't cross the iron bridge).
+                    </p>
+                    <p>
+                        Continue through the woods until you reach the gate at the edge of the woods.
+                    </p>
+                    <p>
+                        <b>Alternative 1:</b> Take the steep path and steps that lead up the mountain to the left. The
+                        path zigzags up the mountain until they come out on a farm track. When you reach this turn left.
+                    </p>
+                    <p>
+                        <b>Alternative 2:</b> You can continue along the track to the right which is an easier route to the
+                        top. Follow the track, take the sharp left turn, up towards the falls.
+                    </p>
+                    <p>
+                        Continue further along the track and around the corner. You will see a path leading down to a swing
+                        gate. This leads to the top of the falls.
+                    </p>
+
+                    <p class="text-center"><strong>Be careful at the edge of the cliff!</strong></p>
+                </div>
+            </section>
+        </article>
+
+
+<!--Javascript-->
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+                var x = document.getElementsByClassName("container");
+                x[0].style.height = "40%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+                var x = document.getElementsByClassName("container");
+                x[0].style.height = "100%";
+            }
+        </script>
+
+        <!--Footer-->
+        <footer id="footer">
+            <p style="color: white">
+                <strong>You are responsible for your own and your party's safety.</strong>
+            </p>
+            <p style="color: white">
+                <strong>The falls have not been tamed with concrete, safety railings and warning signs.</strong>
+            </p>
+
+            <ul class="copyright">
+                <li>&copy; Untitled</li>
+                <li>Design: <a href="https://twitter.com/sophiewattis">Sophie Wattis</a></li>
+            </ul>
+        </footer>
+    </body>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+</html>

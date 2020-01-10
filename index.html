@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Pistyll Rhaeadar</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="css/bootstrap-grid.css.map" />
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css.map" />
+        <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+        <link rel="stylesheet" href="css/bootstrap-reboot.css.map" />
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css.map" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/bootstrap.css.map" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    </head>
+
+    <body>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="toggle-overlay">Menu</span>
+
+        <!--Menu-->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="walks.html">Walks</a>
+                <a href="accomadation.html">Accomodation</a>
+                <a href="gallery.html">The Gallery</a>
+                <a href="location.html">Where To Find Us</a>
+            </div>
+        </div>
+
+        <!-- Banner -->
+        <header>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="Banner.mp4" type="video/mp4" />
+            </video>
+            <div class="container banner-text">
+                <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white">
+                        <h1 class="display-1">Pistyll Rhaedar</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- One -->
+        <section id="one" class="wrapper style1 special">
+            <div class="content">
+                <div class="inner">
+                    <div class="major">
+                        <h2>Britains tallest single-drop waterfall stood at 240ft (80m) A captivating waterfall in the Berwyn Mountains.</h2>
+                        <p>Just inside Wales, west of Oswestry and Shrewsbury.</p>
+                        <br />
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two -->
+            <section class="spotlight text-center">
+                <div class="container">
+                    <h2>Visiting The Falls</h2>
+                    <p>Pistyll Rhaeadar is open to the public all throughout the year. There is no charge to visit the
+                        falls. Donations for the upkeep of the site are gratefully received in a box next to the gate.</p>
+                </div>
+            </section>
+
+            <section class="spotlight text-center">
+                <div class="container">
+                    <h2>Prices</h2>
+
+                    <p><b>Summer</b></p>
+                    <p>Cars: £5</p>
+                    <p>Motorbikes: £4</p>
+
+                    <p><b>Winter</b></p>
+                    <p>Cars: £4</p>
+                    <p>Motorbikes: £3</p>
+
+                    <br />
+                    <p>There is an overnight charge if cars are left here overnight.</p>
+                    <p>All payments cover conservation projects around the site. If you don't wish to pay, there are
+                        roadside parking 100 yards before you reach us.</p>
+                </div>
+            </section>
+
+            <section class="spotlight text-center">
+                <div class="container">
+                    <h2>Walks</h2>
+                    <p>A short walk from the car park through the wooden gate next to the tea room, takes you to the
+                        base of the waterfall.</p>
+                    <p>At the base of the falls there is an iron bridge crossing the river which takes you to the
+                        woodland walks and a public footpath.</p>
+                    <p>The top of the falls is reached via a public footpath which takes around 20 minutes.</p>
+                </div>
+            </section>
+
+            <section class="spotlight text-center">
+                <div class="container">
+                    <h2>Food and Drink</h2>
+                    <p><b>Opening hours :</b> 10am-4pm (winter) 9.30am - 6pm (summer)</p>
+                    <p>Our family-friendly restaurant seats 38 people indoors and we have outdoor bench seating for
+                        around 38 people.</p>
+                    <p>We have created an extensive menu to cater for the large range of visitors that visit Pistyll
+                        Rhaeadar
+                        <br />
+                        The menu includes breakfast, sandwiches, baked potatoes and snacks, as well as main course meals
+                        and the chefs special menu, with a dessert menu to follow.</p>
+                </div>
+            </section>
+
+<!--Javascript-->
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+                var x = document.getElementsByClassName("container");
+                x[0].style.height = "40%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+                var x = document.getElementsByClassName("container");
+                x[0].style.height = "100%";
+            }
+            
+            if ($banner.length > 0
+                && $header.hasClass('alt')) {
+
+                $window.on('resize', function () { $window.trigger('scroll'); });
+
+                $banner.scrollex({
+                    bottom: $header.outerHeight() + 1,
+                    terminate: function () { $header.removeClass('alt'); },
+                    enter: function () { $header.addClass('alt'); },
+                    leave: function () { $header.removeClass('alt'); }
+                });
+            }
+        </script>
+
+        <!--Footer-->
+        <footer id="footer">
+            <p style="color: white">
+                <strong>You are responsible for your own and your party's safety.</strong>
+            </p>
+            <p style="color: white">
+                <strong>The falls have not been tamed with concrete, safety railings and warning signs.</strong>
+            </p>
+
+            <ul class="copyright">
+                <li>&copy; Untitled</li>
+                <li>Design: <a href="https://twitter.com/sophiewattis">Sophie Wattis</a></li>
+            </ul>
+            
+        </footer>
+    </body>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+</html>

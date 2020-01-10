@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Pistyll Rhaeadar</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-grid.css" />
+		<link rel="stylesheet" href="css/bootstrap-grid.css.map" />
+		<link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-grid.min.css.map" />
+		<link rel="stylesheet" href="css/bootstrap-reboot.css" />
+		<link rel="stylesheet" href="css/bootstrap-reboot.css.map" />
+		<link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-reboot.min.css.map" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap.css.map" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css.map" />
+	</head>
+
+	<body>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()" class="toggle-overlay">Menu</span>
+
+<!--Menu-->
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<a href="index.html">Home</a>
+				<a href="walks.html">Walks</a>
+                <a href="accomadation.html">Accomodation</a>
+				<a href="gallery.html">The Gallery</a>
+				<a href="location.html">Where To Find Us</a>
+			</div>
+		</div>
+
+		<!-- Header -->
+		<article id="main">
+			<header>
+				<h2>Gallery</h2>
+				<p>Photos of the falls</p>
+            </header>
+            
+			<br />
+            <br />
+            
+			<!--Content-->
+            <div class="container">
+			<div class="box alt">
+				<div class="row gtr-50 gtr-uniform">
+                    <div class="col-4"><span class="image fit"><img src="css/images/gallerytop1.jpg" alt="path going through woodland leading up to the waterfall" /></span></div>
+                    <div class="col-4"><span class="image fit"><img src="css/images/gallerytop2.jpg" alt="picture of waterfall" /></span></div>
+                    <div class="col-4"><span class="image fit"><img src="css/images/gallerytop3.jpg" alt="picture of waterfall" /></span></div>
+                   
+                    <div class="col-6"><span class="image fit"><img src="css/images/gallerytop4.jpg" alt="fog going up the side of the mountain" /></span></div>
+                    <div class="col-6"><span class="image fit"><img src="css/images/mid2.JPG" alt="picture of waterfall" /></span></div>
+                    
+                    <div class="col-4"><span class="image fit"><img src="css/images/bottom1.JPG" alt="dog on path leading up to the waterfall" /></span></div>
+                    <div class="col-4"><span class="image fit"><img src="css/images/bottom2.JPG" alt="person on path leading up to the waterfall" /></span></div>
+                    <div class="col-4"><span class="image fit"><img src="css/images/bottom4.JPG" alt="waterfall from the top" /></span></div>
+                    
+                    <br/>
+
+                </div>
+				</div>
+			</div>
+		</article>
+
+<!-- Javascript-->
+		<script>
+			function openNav() {
+				document.getElementById("myNav").style.width = "100%";
+				var x = document.getElementsByClassName("container");
+				x[0].style.height = "40%";
+			}
+
+			function closeNav() {
+				document.getElementById("myNav").style.width = "0%";
+				var x = document.getElementsByClassName("container");
+				x[0].style.height = "100%";
+			}
+		</script>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p style="color: white">
+                <strong>You are responsible for your own and your party's safety.</strong>
+            </p>
+            <p style="color: white">
+                <strong>The falls have not been tamed with concrete, safety railings and warning signs.</strong>
+            </p>
+            
+            <ul class="copyright">
+                <li>&copy; Untitled</li>
+                <li>Design: <a href="https://twitter.com/sophiewattis">Sophie Wattis</a></li>
+            </ul>
+        </footer>
+	</body>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+	<script src="js/bootstrap.bundle.js"></script>
+	<script src="js/bootstrap.js"></script>
+</html>
